@@ -2,8 +2,8 @@
 const VehicleModule = require("./vehicle")
 
 class Car extends Vehicle {
-    constructor () {
-        super()
+    constructor (make, model, year, color, mileage) {
+        super(make, model, year, color, mileage)
         this.maximumPassengers = 5;
         this.passenger = 0;
         this.numberOfWheels = 4;
@@ -46,5 +46,5 @@ class Car extends Vehicle {
 
 
 //this shows how to call from this module...
-// let v = new VehicleModule.Vehicle("Mercury", "Sedan", "1965", "color", "mileage");
-// console.log(v.make)
+//  let v = new VehicleModule.Vehicle("Mercury", "Sedan", "1965", "color", "mileage");
+//  console.log(v.make)
